@@ -1,3 +1,12 @@
+>    更改地址为192.168.59.103:2181 192.168.59.203
+>    先创建topic kafka-topics.sh --create --zookeeper 192.168.59.103:2181 --replication-factor 1 --partitions 1 --topic topic1
+>    先创建topic kafka-topics.sh --create --zookeeper 192.168.59.103:2181 --replication-factor 1 --partitions 1 --topic topic2
+>    先创建topic kafka-topics.sh --create --zookeeper 192.168.59.103:2181 --replication-factor 1 --partitions 1 --topic topic3
+>   SimpleConsumerDemo,两个多线程生产数据，同时获取topic2/topic2的数据。
+>   KafkaConsumerProducerDemo,一个线程生产，一个线程消费，都是topic的数据。
+
+
+
 This directory contains examples of client code that uses kafka.
 
 The default target for ant is kafka.examples.KafkaConsumerProducerDemo which sends and receives 
